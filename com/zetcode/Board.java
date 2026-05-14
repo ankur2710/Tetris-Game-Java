@@ -81,3 +81,43 @@ public class Board extends JPanel {
 
         repaint();
     }
+
+@Override
+    public void paintComponent(Graphics g) {
+
+        super.paintComponent(g);
+        doDrawing(g);
+    }
+
+    private void doDrawing(Graphics g) {
+
+        var size = getSize();
+        int boardTop = (int) size.getHeight() - BOARD_HEIGHT * squareHeight();
+
+        for (int i = 0; i < BOARD_HEIGHT; i++) {
+
+            for (int j = 0; j < BOARD_WIDTH; j++) {
+
+                Tetrominoe shape = shapeAt(j, BOARD_HEIGHT - i - 1);
+
+                if (shape != Tetrominoe.NoShape) {
+
+                    drawSquare(g, j * squareWidth(),
+                            boardTop + i * squareHeight(), shape);
+                }
+            }
+        }
+
+        if (curPiece.getShape() != Tetrominoe.NoShape) {
+
+            for (int i = 0; i < 4; i++) {
+
+                int x = curX + curPiece.x(i);
+                int y = curY - curPiece.y(i);
+
+                drawSquare(g, x * squareWidth(),
+                        boardTop + (BOARD_HEIGHT - y - 1) * squareHeight(),
+                        curPiece.getShape());
+            }
+        }
+    }
