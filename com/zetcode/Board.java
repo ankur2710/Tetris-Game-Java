@@ -134,3 +134,14 @@ private void dropDown() {
 
             newY--;
         }
+  pieceDropped();
+    }
+
+    private void oneLineDown() {
+
+        if (!tryMove(curPiece, curX, curY - 1)) {
+
+            pieceDropped();
+        }
+    }
+    "148"
