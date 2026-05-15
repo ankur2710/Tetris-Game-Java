@@ -144,4 +144,10 @@ private void dropDown() {
             pieceDropped();
         }
     }
-    "148"
+      private void clearBoard() {
+
+        for (int i = 0; i < BOARD_HEIGHT * BOARD_WIDTH; i++) {
+
+            board[i] = Tetrominoe.NoShape;
+        }
+    }
