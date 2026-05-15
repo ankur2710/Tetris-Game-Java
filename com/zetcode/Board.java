@@ -182,3 +182,30 @@ private void dropDown() {
             statusbar.setText(msg);
         }
     }
+ private boolean tryMove(Shape newPiece, int newX, int newY) {
+
+        for (int i = 0; i < 4; i++) {
+
+            int x = newX + newPiece.x(i);
+            int y = newY - newPiece.y(i);
+
+            if (x < 0 || x >= BOARD_WIDTH || y < 0 || y >= BOARD_HEIGHT) {
+
+                return false;
+            }
+
+            if (shapeAt(x, y) != Tetrominoe.NoShape) {
+
+                return false;
+            }
+        }
+
+        curPiece = newPiece;
+        curX = newX;
+        curY = newY;
+
+        repaint();
+
+        return true;
+    }
+    "215"
