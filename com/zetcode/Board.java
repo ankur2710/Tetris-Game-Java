@@ -279,3 +279,19 @@ private void dropDown() {
         update();
         repaint();
     }
+    private void update() {
+
+        if (isPaused) {
+
+            return;
+        }
+
+        if (isFallingFinished) {
+
+            isFallingFinished = false;
+            newPiece();
+        } else {
+
+            oneLineDown();
+        }
+    }
