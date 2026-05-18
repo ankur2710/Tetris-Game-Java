@@ -274,4 +274,8 @@ private void dropDown() {
             doGameCycle();
         }
     }
-    "288"
+     private void doGameCycle() {
+
+        update();
+        repaint();
+    }
