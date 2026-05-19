@@ -28,4 +28,19 @@ public class Shape {
                 { { -1, -1 }, { 0, -1 },  { 0, 0 },   { 0, 1 } },
                 { { 1, -1 },  { 0, -1 },  { 0, 0 },   { 0, 1 } }
         };
+        setShape(Tetrominoe.NoShape);
+    }
+
+    protected void setShape(Tetrominoe shape) {
+
+        for (int i = 0; i < 4 ; i++) {
+
+            for (int j = 0; j < 2; ++j) {
+
+                coords[i][j] = coordsTable[shape.ordinal()][i][j];
+            }
+        }
+
+        pieceShape = shape;
+    }
 
