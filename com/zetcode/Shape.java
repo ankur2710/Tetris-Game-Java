@@ -10,3 +10,7 @@ public class Shape {
     private Tetrominoe pieceShape;
     private int coords[][];
     private int[][][] coordsTable;
+    public Shape() {
+
+        initShape();
+    }
