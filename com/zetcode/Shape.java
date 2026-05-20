@@ -49,3 +49,12 @@ public class Shape {
     public int x(int index) { return coords[index][0]; }
     public int y(int index) { return coords[index][1]; }
     public Tetrominoe getShape()  { return pieceShape; }
+    
+    public void setRandomShape() {
+
+        var r = new Random();
+        int x = Math.abs(r.nextInt()) % 7 + 1;
+
+        Tetrominoe[] values = Tetrominoe.values();
+        setShape(values[x]);
+    }
