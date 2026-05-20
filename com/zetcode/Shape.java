@@ -43,4 +43,9 @@ public class Shape {
 
         pieceShape = shape;
     }
-      "49"
+      
+        private void setX(int index, int x) { coords[index][0] = x; }
+    private void setY(int index, int y) { coords[index][1] = y; }
+    public int x(int index) { return coords[index][0]; }
+    public int y(int index) { return coords[index][1]; }
+    public Tetrominoe getShape()  { return pieceShape; }
