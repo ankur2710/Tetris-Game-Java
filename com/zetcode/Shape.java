@@ -68,4 +68,15 @@ public class Shape {
         }
 
         return m;
-    }"76"
+    }
+    public int minY() {
+
+        int m = coords[0][1];
+
+        for (int i=0; i < 4; i++) {
+
+            m = Math.min(m, coords[i][1]);
+        }
+
+        return m;
+    }
