@@ -98,4 +98,13 @@ public class Shape {
 
         return result;
     }
-    
+       public Shape rotateRight() {
+
+        if (pieceShape == Tetrominoe.SquareShape) {
+
+            return this;
+        }
+
+        var result = new Shape();
+        result.pieceShape = pieceShape;
+
