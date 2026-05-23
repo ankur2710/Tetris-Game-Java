@@ -4,4 +4,9 @@ import java.awt.BorderLayout;
 import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+/*
+Java Tetris game clone
 
+Author: Jan Bodnar
+Website: https://zetcode.com
+ */
