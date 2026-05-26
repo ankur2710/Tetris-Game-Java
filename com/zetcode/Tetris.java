@@ -38,4 +38,13 @@ public class Tetris extends JFrame {
 
         return statusbar;
     }
+      public static void main(String[] args) {
+
+        EventQueue.invokeLater(() -> {
+
+            var game = new Tetris();
+            game.setVisible(true);
+        });
+    }
+}
 
