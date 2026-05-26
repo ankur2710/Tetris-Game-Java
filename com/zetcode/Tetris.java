@@ -20,3 +20,17 @@ public class Tetris extends JFrame {
 
         initUI();
     }
+    private void initUI() {
+
+        statusbar = new JLabel(" 0");
+        add(statusbar, BorderLayout.SOUTH);
+
+        var board = new Board(this);
+        add(board);
+        board.start();
+
+        setTitle("Tetris");
+        setSize(200, 400);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+    }
