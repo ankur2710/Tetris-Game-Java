@@ -14,4 +14,9 @@ The tetrominoes are drawn using the Swing painting API. We use the java.util.Tim
 
 The game starts immediately after it is launched. We can pause the game by pressing the p key. The space key will drop the Tetris piece immediately to the bottom. The d key will drop the piece one line down. (It can be used to speed up the falling a bit.) The game goes at constant speed, no acceleration is implemented. The score is the number of lines that we have removed.
 
+The Shape class provides information about a Tetris piece. 
+protected enum Tetrominoe {
+    NoShape, ZShape, SShape, LineShape,
+    TShape, SquareShape, LShape, MirroredLShape
+}
 ![Tetris game screenshot](tetris_game.png)
