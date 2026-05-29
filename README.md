@@ -20,5 +20,11 @@ protected enum Tetrominoe {
     TShape, SquareShape, LShape, MirroredLShape
 }
 
+The Tetrominoe enum holds seven Tetris shape names and the empty shape called NoShape.
+
+coords = new int[4][2];
+setShape(Tetrominoe.NoShape);
+
+
 
 ![Tetris game screenshot](tetris_game.png)
