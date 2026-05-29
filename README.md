@@ -19,4 +19,6 @@ protected enum Tetrominoe {
     NoShape, ZShape, SShape, LineShape,
     TShape, SquareShape, LShape, MirroredLShape
 }
+
+
 ![Tetris game screenshot](tetris_game.png)
