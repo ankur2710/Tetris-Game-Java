@@ -26,5 +26,19 @@ coords = new int[4][2];
 setShape(Tetrominoe.NoShape);
 
 
+The coords array holds the actual coordinates of a Tetris piece.
+
+int[][][] coordsTable = new int[][][]{
+    {{0, 0}, {0, 0}, {0, 0}, {0, 0}},
+    {{0, -1}, {0, 0}, {-1, 0}, {-1, 1}},
+    {{0, -1}, {0, 0}, {1, 0}, {1, 1}},
+    {{0, -1}, {0, 0}, {0, 1}, {0, 2}},
+    {{-1, 0}, {0, 0}, {1, 0}, {0, 1}},
+    {{0, 0}, {1, 0}, {0, 1}, {1, 1}},
+    {{-1, -1}, {0, -1}, {0, 0}, {0, 1}},
+    {{1, -1}, {0, -1}, {0, 0}, {0, 1}}
+};
+
+
 
 ![Tetris game screenshot](tetris_game.png)
