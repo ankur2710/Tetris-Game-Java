@@ -47,3 +47,6 @@ for (int i = 0; i < 4; i++) {
     System.arraycopy(coordsTable[shape.ordinal()], 0, coords, 0, 4);
 }
 
+We put one row of the coordinate values from the coordsTable into the coords array of a Tetris piece. Note the usage of the ordinal() method. In C++, an enum type is essentially an integer. Unlike in C++, Java enums are full classes and the ordinal() method returns the current position of the enum type in the enum object.
+
+The following image will help understand the coordinate values a bit more. The coords array saves the coordinates of the Tetris piece. For example, numbers (-1, 1), (-1, 0), (0, 0), and (0, -1) represent a rotated S-shape. The following diagram illustrates the shape.
