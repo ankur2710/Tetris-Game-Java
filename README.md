@@ -47,4 +47,3 @@ for (int i = 0; i < 4; i++) {
     System.arraycopy(coordsTable[shape.ordinal()], 0, coords, 0, 4);
 }
 
-![Tetris game screenshot](tetris_game.png)
