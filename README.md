@@ -40,5 +40,11 @@ int[][][] coordsTable = new int[][][]{
 };
 
 
+The coordsTable array holds all possible coordinate values of the Tetris pieces. This is a template from which all pieces take their coordiate values.
+
+for (int i = 0; i < 4; i++) {
+
+    System.arraycopy(coordsTable[shape.ordinal()], 0, coords, 0, 4);
+}
 
 ![Tetris game screenshot](tetris_game.png)
