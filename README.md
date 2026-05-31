@@ -53,3 +53,4 @@ The following image will help understand the coordinate values a bit more. The c
 
 <img width="272" height="230" alt="image" src="https://github.com/user-attachments/assets/8912eef7-b377-49e6-92bd-3f1b94e6ff88" />
 
+Figure: Coordinates
