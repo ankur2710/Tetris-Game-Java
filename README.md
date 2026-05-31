@@ -73,3 +73,5 @@ Shape rotateLeft() {
 
     return result;
 }
+
+This code rotates a piece to the left. The square does not have to be rotated. That's why we simply return the reference to the current object. Looking at the previous image will help to understand the rotation.
