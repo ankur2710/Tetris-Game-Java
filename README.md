@@ -75,3 +75,6 @@ Shape rotateLeft() {
 }
 
 This code rotates a piece to the left. The square does not have to be rotated. That's why we simply return the reference to the current object. Looking at the previous image will help to understand the rotation.
+
+
+Finally, we have the Board.java file. This is where the game logic is located.
