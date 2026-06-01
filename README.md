@@ -78,3 +78,7 @@ This code rotates a piece to the left. The square does not have to be rotated. T
 
 
 Finally, we have the Board.java file. This is where the game logic is located.
+
+private final int BOARD_WIDTH = 10;
+private final int BOARD_HEIGHT = 22;
+private final int PERIOD_INTERVAL = 300;
