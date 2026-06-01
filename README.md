@@ -84,3 +84,5 @@ private final int BOARD_WIDTH = 10;
 private final int BOARD_HEIGHT = 22;
 
 private final int PERIOD_INTERVAL = 300;
+
+We have four constants. The BOARD_WIDTH and BOARD_HEIGHT define the size of the board. The PERIOD_INTERVAL constant defines the speed of the game.
