@@ -104,9 +104,16 @@ private int squareWidth() {
     return (int) getSize().getWidth() / BOARD_WIDTH;
 }
 
+
+
 private int squareHeight() {
 
     return (int) getSize().getHeight() / BOARD_HEIGHT;
 }
 
 These lines determine the width and height of a single Tetrominoe square.
+
+private Tetrominoe shapeAt(int x, int y) {
+
+    return board[(y * BOARD_WIDTH) + x];
+}
