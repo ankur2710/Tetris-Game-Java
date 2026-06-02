@@ -119,3 +119,9 @@ private Tetrominoe shapeAt(int x, int y) {
 }
 
 We determine the shape at the given coordinates. The shapes are stored in the board array.
+
+void start() {
+
+    curPiece = new Shape();
+    board = new Tetrominoe[BOARD_WIDTH * BOARD_HEIGHT];
+...
