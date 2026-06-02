@@ -96,3 +96,5 @@ private int numLinesRemoved = 0;
 private int curX = 0;
 private int curY = 0;
 ...
+
+Some important variables are initialized. The isFallingFinished determines if the Tetris shape has finished falling and we then need to create a new shape. The isStarted is used to check if the game has started. Likewise, the isPaused is used to check if the game is paused. The numLinesRemoved counts the number of lines that we have removed so far. The curX and curY determine the actual position of the falling Tetris shape.
