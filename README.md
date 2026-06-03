@@ -131,3 +131,5 @@ We create a new current shape and a new board.
 
 clearBoard();
 newPiece();
+
+The board is cleared and the new falling piece is initialized.
