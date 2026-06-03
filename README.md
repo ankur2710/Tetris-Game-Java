@@ -128,3 +128,6 @@ void start() {
 
 
 We create a new current shape and a new board.
+
+clearBoard();
+newPiece();
