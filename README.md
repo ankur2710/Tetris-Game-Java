@@ -136,3 +136,5 @@ The board is cleared and the new falling piece is initialized.
 
 timer = new Timer(PERIOD_INTERVAL, new GameCycle());
 timer.start();
+
+We create a timer. The timer is executed at PERIOD_INTERVAL intervals, creating a game cycle.
