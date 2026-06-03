@@ -133,3 +133,6 @@ clearBoard();
 newPiece();
 
 The board is cleared and the new falling piece is initialized.
+
+timer = new Timer(PERIOD_INTERVAL, new GameCycle());
+timer.start();
