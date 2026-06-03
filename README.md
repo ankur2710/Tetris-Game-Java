@@ -125,3 +125,6 @@ void start() {
     curPiece = new Shape();
     board = new Tetrominoe[BOARD_WIDTH * BOARD_HEIGHT];
 ...
+
+
+We create a new current shape and a new board.
