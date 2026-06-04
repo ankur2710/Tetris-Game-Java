@@ -168,3 +168,10 @@ for (int i = 0; i < BOARD_HEIGHT; i++) {
     Tetrominoe shape = shapeAt(j, BOARD_HEIGHT - i - 1);
 
         if (shape != Tetrominoe.NoShape) {
+         drawSquare(g, j * squareWidth(),
+                    boardTop + i * squareHeight(), shape);
+        }
+    }
+}
+        
+
