@@ -161,3 +161,7 @@ The pause() method pauses or resumes the game. When the game is paused, we displ
 
 Inside the doDrawing() method, we draw all objects on the board. The painting has two steps.
 
+
+for (int i = 0; i < BOARD_HEIGHT; i++) {
+
+    for (int j = 0; j < BOARD_WIDTH; j++) {
