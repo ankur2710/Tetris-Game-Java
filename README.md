@@ -129,12 +129,29 @@ void start() {
 
 We create a new current shape and a new board.
 
+
 clearBoard();
 newPiece();
 
 The board is cleared and the new falling piece is initialized.
 
+
 timer = new Timer(PERIOD_INTERVAL, new GameCycle());
 timer.start();
 
 We create a timer. The timer is executed at PERIOD_INTERVAL intervals, creating a game cycle.
+
+private void pause() {
+
+    isPaused = !isPaused;
+
+    if (isPaused) {
+
+        statusbar.setText("paused");
+    } else {
+
+        statusbar.setText(String.valueOf(numLinesRemoved));
+    }
+
+    repaint();
+}
