@@ -156,5 +156,8 @@ private void pause() {
     repaint();
 }
 
+
 The pause() method pauses or resumes the game. When the game is paused, we display the paused message in the statusbar.
+
+Inside the doDrawing() method, we draw all objects on the board. The painting has two steps.
 
