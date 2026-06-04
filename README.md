@@ -165,3 +165,6 @@ Inside the doDrawing() method, we draw all objects on the board. The painting ha
 for (int i = 0; i < BOARD_HEIGHT; i++) {
 
     for (int j = 0; j < BOARD_WIDTH; j++) {
+    Tetrominoe shape = shapeAt(j, BOARD_HEIGHT - i - 1);
+
+        if (shape != Tetrominoe.NoShape) {
