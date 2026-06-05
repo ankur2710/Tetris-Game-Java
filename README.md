@@ -177,3 +177,9 @@ for (int i = 0; i < BOARD_HEIGHT; i++) {
 In the first step we paint all the shapes or remains of the shapes that have been dropped to the bottom of the board. All the squares are remembered in the board array. We access it using the shapeAt() method.
         
 
+if (curPiece.getShape() != Tetrominoe.NoShape) {
+
+    for (int i = 0; i < 4; i++) {
+
+        int x = curX + curPiece.x(i);
+        int y = curY - curPiece.y(i);
