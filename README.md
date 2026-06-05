@@ -188,3 +188,5 @@ if (curPiece.getShape() != Tetrominoe.NoShape) {
                 curPiece.getShape());
     }
 }
+
+In the second step, we paint the actual falling piece.
