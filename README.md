@@ -183,3 +183,8 @@ if (curPiece.getShape() != Tetrominoe.NoShape) {
 
         int x = curX + curPiece.x(i);
         int y = curY - curPiece.y(i);
+          drawSquare(g, x * squareWidth(),
+                boardTop + (BOARD_HEIGHT - y - 1) * squareHeight(),
+                curPiece.getShape());
+    }
+}
