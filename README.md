@@ -197,4 +197,12 @@ private void dropDown() {
     int newY = curY;
 
     while (newY > 0) {
+            if (!tryMove(curPiece, curX, newY - 1)) {
+
+            break;
+        }
+
+        newY--;
+    }
+
 
