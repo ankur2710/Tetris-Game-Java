@@ -204,5 +204,8 @@ private void dropDown() {
 
         newY--;
     }
+    pieceDropped();
+}
+
 
 
