@@ -190,3 +190,11 @@ if (curPiece.getShape() != Tetrominoe.NoShape) {
 }
 
 In the second step, we paint the actual falling piece.
+
+
+private void dropDown() {
+
+    int newY = curY;
+
+    while (newY > 0) {
+
