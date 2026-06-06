@@ -207,5 +207,5 @@ private void dropDown() {
     pieceDropped();
 }
 
-
+If we press the Space key, the piece is dropped to the bottom. We simply try to drop the piece one line down until it reaches the bottom or the top of another fallen Tetris piece. When the Tetris piece finishes falling, the pieceDropped() is called.
 
