@@ -217,3 +217,5 @@ private void oneLineDown() {
     }
 }
 
+In the oneLineDown() method we try to move the falling piece down one line until it is fully dropped.
+
