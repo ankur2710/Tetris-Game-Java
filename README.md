@@ -219,3 +219,6 @@ private void oneLineDown() {
 
 In the oneLineDown() method we try to move the falling piece down one line until it is fully dropped.
 
+private void clearBoard() {
+
+    for (int i = 0; i < BOARD_HEIGHT * BOARD_WIDTH; i++) {
