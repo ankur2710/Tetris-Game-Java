@@ -213,3 +213,7 @@ If we press the Space key, the piece is dropped to the bottom. We simply try to 
 private void oneLineDown() {
 
     if (!tryMove(curPiece, curX, curY - 1)) {
+            pieceDropped();
+    }
+}
+
