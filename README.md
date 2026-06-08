@@ -225,4 +225,5 @@ private void clearBoard() {
     board[i] = Tetrominoe.NoShape;
     }
 }
+The clearBoard() method fills the board with empty Tetrominoe.NoShape. This is later used at collision detection.
 
