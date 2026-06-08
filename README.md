@@ -243,3 +243,5 @@ private void pieceDropped() {
         newPiece();
     }
 }
+
+The pieceDropped() method puts the falling piece into the board array. Once again, the board holds all the squares of the pieces and remains of the pieces that has finished falling. When the piece has finished falling, it is time to check if we can remove some lines off the board. 
