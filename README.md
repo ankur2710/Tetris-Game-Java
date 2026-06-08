@@ -236,3 +236,10 @@ private void pieceDropped() {
         int y = curY - curPiece.y(i);
         board[(y * BOARD_WIDTH) + x] = curPiece.getShape();
     }
+     removeFullLines();
+
+    if (!isFallingFinished) {
+
+        newPiece();
+    }
+}
