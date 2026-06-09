@@ -254,3 +254,5 @@ private void newPiece() {
     curY = BOARD_HEIGHT - 1 + curPiece.minY();
 
     if (!tryMove(curPiece, curX, curY)) {
+     curPiece.setShape(Tetrominoe.NoShape);
+        timer.stop();
