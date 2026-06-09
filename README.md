@@ -256,3 +256,7 @@ private void newPiece() {
     if (!tryMove(curPiece, curX, curY)) {
      curPiece.setShape(Tetrominoe.NoShape);
         timer.stop();
+         var msg = String.format("Game over. Score: %d", numLinesRemoved);
+        statusbar.setText(msg);
+    }
+}
