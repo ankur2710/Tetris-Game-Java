@@ -260,4 +260,6 @@ private void newPiece() {
         statusbar.setText(msg);
     }
 }
-The newPiece() method creates a new Tetris piece. The piece gets a new random shape. Then we compute the initial curX and curY values. If we cannot move to the initial positions,
+
+
+The newPiece() method creates a new Tetris piece. The piece gets a new random shape. Then we compute the initial curX and curY values. If we cannot move to the initial positions, the game is over—we top out. The timer is stopped and we display Game over string containing the score on the statusbar.
