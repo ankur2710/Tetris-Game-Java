@@ -280,4 +280,7 @@ private boolean tryMove(Shape newPiece, int newX, int newY) {
             return false;
         }
     }
+       curPiece = newPiece;
+    curX = newX;
+    curY = newY;
 
