@@ -275,4 +275,9 @@ private boolean tryMove(Shape newPiece, int newX, int newY) {
 
             return false;
         }
+          if (shapeAt(x, y) != Tetrominoe.NoShape) {
+
+            return false;
+        }
+    }
 
