@@ -271,3 +271,8 @@ private boolean tryMove(Shape newPiece, int newX, int newY) {
 
         int x = newX + newPiece.x(i);
         int y = newY - newPiece.y(i);
+        if (x < 0 || x >= BOARD_WIDTH || y < 0 || y >= BOARD_HEIGHT) {
+
+            return false;
+        }
+
