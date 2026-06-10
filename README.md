@@ -263,3 +263,11 @@ private void newPiece() {
 
 
 The newPiece() method creates a new Tetris piece. The piece gets a new random shape. Then we compute the initial curX and curY values. If we cannot move to the initial positions, the game is over—we top out. The timer is stopped and we display Game over string containing the score on the statusbar.
+
+
+private boolean tryMove(Shape newPiece, int newX, int newY) {
+
+    for (int i = 0; i < 4; i++) {
+
+        int x = newX + newPiece.x(i);
+        int y = newY - newPiece.y(i);
