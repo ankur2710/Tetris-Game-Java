@@ -283,4 +283,8 @@ private boolean tryMove(Shape newPiece, int newX, int newY) {
        curPiece = newPiece;
     curX = newX;
     curY = newY;
+    repaint();
+
+    return true;
+}
 
