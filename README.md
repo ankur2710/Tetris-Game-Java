@@ -298,3 +298,13 @@ private void removeFullLines() {
 for (int i = BOARD_HEIGHT - 1; i >= 0; i--) {
 
         boolean lineIsFull = true;
+
+        
+        for (int j = 0; j < BOARD_WIDTH; j++) {
+
+            if (shapeAt(j, i) == Tetrominoe.NoShape) {
+
+                lineIsFull = false;
+                break;
+            }
+        }
