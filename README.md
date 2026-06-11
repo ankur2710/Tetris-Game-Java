@@ -294,3 +294,7 @@ The tryMove() method tries to move the Tetris piece. The method returns false if
 private void removeFullLines() {
 
     int numFullLines = 0;
+
+for (int i = BOARD_HEIGHT - 1; i >= 0; i--) {
+
+        boolean lineIsFull = true;
