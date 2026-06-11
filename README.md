@@ -288,3 +288,4 @@ private boolean tryMove(Shape newPiece, int newX, int newY) {
     return true;
 }
 
+The tryMove() method tries to move the Tetris piece. The method returns false if it has reached the board boundaries or it is adjacent to the already fallen Tetris pieces.
