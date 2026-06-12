@@ -320,3 +320,6 @@ for (int i = BOARD_HEIGHT - 1; i >= 0; i--) {
             }
         }
     }
+    if (numFullLines > 0) {
+
+        numLinesRemoved += numFullLines;
