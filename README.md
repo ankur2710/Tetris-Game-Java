@@ -328,3 +328,6 @@ for (int i = BOARD_HEIGHT - 1; i >= 0; i--) {
         curPiece.setShape(Tetrominoe.NoShape);
     }
 }
+
+
+Inside the removeFullLines() method we check if there is any full row among all rows in the board. If there is at least one full line, it is removed.
