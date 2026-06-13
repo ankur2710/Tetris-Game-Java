@@ -339,4 +339,8 @@ private void drawSquare(Graphics g, int x, int y, Tetrominoe shape) {
             new Color(204, 204, 102), new Color(204, 102, 204),
             new Color(102, 204, 204), new Color(218, 170, 0)
     };
+    var color = colors[shape.ordinal()];
+
+    g.setColor(color);
+    g.fillRect(x + 1, y + 1, squareWidth() - 2, squareHeight() - 2);
 
