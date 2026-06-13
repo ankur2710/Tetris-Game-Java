@@ -346,4 +346,10 @@ private void drawSquare(Graphics g, int x, int y, Tetrominoe shape) {
     g.setColor(color.brighter());
     g.drawLine(x, y + squareHeight() - 1, x, y);
     g.drawLine(x, y, x + squareWidth() - 1, y);
+    g.setColor(color.darker());
+    g.drawLine(x + 1, y + squareHeight() - 1,
+            x + squareWidth() - 1, y + squareHeight() - 1);
+    g.drawLine(x + squareWidth() - 1, y + squareHeight() - 1,
+            x + squareWidth() - 1, y + 1);
+}
 
