@@ -331,3 +331,6 @@ for (int i = BOARD_HEIGHT - 1; i >= 0; i--) {
 
 
 Inside the removeFullLines() method we check if there is any full row among all rows in the board. If there is at least one full line, it is removed. After finding a full line we increase the counter. We move all the lines above the full row one line down. This way we destroy the full line. Notice, that in our Tetris game, we use so called naive gravity. This means that the squares may be left floating above empty gaps.
+
+
+private void drawSquare(Graphics g, int x, int y, Tetrominoe shape) {
