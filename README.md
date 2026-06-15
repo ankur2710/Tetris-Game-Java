@@ -355,3 +355,8 @@ private void drawSquare(Graphics g, int x, int y, Tetrominoe shape) {
 
 
 Every Tetris piece has four squares. Each of the squares is drawn with the drawSquare() method. Tetris pieces have different colours. The left and top sides of a square are drawn with a brighter color. Similarly, the bottom and right sides are drawn with darker colours. This is to simulate a 3D edge.
+
+
+private class GameCycle implements ActionListener {
+
+    @Override
