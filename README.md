@@ -353,3 +353,5 @@ private void drawSquare(Graphics g, int x, int y, Tetrominoe shape) {
             x + squareWidth() - 1, y + 1);
 }
 
+
+Every Tetris piece has four squares. Each of the squares is drawn with the drawSquare() method. Tetris pieces have different colours. 
