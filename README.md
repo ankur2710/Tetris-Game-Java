@@ -360,3 +360,8 @@ Every Tetris piece has four squares. Each of the squares is drawn with the drawS
 private class GameCycle implements ActionListener {
 
     @Override
+     public void actionPerformed(ActionEvent e) {
+
+        doGameCycle();
+    }
+}
