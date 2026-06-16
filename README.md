@@ -384,4 +384,9 @@ private void update() {
 
         return;
     }
+        if (isFallingFinished) {
+
+        isFallingFinished = false;
+        newPiece();
+    } 
 
