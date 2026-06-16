@@ -367,3 +367,9 @@ private class GameCycle implements ActionListener {
 }
 
 In the GameCycle, we call the doGameCycle() method, creating a game cycle.
+
+private void doGameCycle() {
+
+    update();
+    repaint();
+}
