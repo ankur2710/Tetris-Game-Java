@@ -388,5 +388,10 @@ private void update() {
 
         isFallingFinished = false;
         newPiece();
-    } 
+    }  else {
+
+        oneLineDown();
+    }
+}
+
 
