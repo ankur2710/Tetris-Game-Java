@@ -376,3 +376,12 @@ private void doGameCycle() {
 
 
 The game is divided into game cycles. Each cycle udpates the game and redraws the board.
+
+
+private void update() {
+
+    if (isPaused) {
+
+        return;
+    }
+
