@@ -373,3 +373,6 @@ private void doGameCycle() {
     update();
     repaint();
 }
+
+
+The game is divided into game cycles. Each cycle udpates the game and redraws the board.
