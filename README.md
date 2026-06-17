@@ -400,3 +400,5 @@ The update() represents one step of the game. The falling piece goes one line do
 private class TAdapter extends KeyAdapter {
 
     @Override
+     public void keyPressed(KeyEvent e) {
+        ...
