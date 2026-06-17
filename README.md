@@ -395,3 +395,4 @@ private void update() {
 }
 
 
+The update() represents one step of the game. The falling piece goes one line down or a new piece is created if the previous one has finished falling.
