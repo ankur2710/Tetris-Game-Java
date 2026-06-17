@@ -402,3 +402,5 @@ private class TAdapter extends KeyAdapter {
     @Override
      public void keyPressed(KeyEvent e) {
         ...
+
+ The game is controlled with cursor keys. We check for key events in the KeyAdapter.       
