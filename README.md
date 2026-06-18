@@ -406,4 +406,7 @@ private class TAdapter extends KeyAdapter {
  The game is controlled with cursor keys. We check for key events in the KeyAdapter.      
 
 
- int keycode = e.getKeyCode();
+    int keycode = e.getKeyCode();
+
+
+ We get the key code with getKeyCode() method.
