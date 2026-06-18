@@ -410,3 +410,6 @@ private class TAdapter extends KeyAdapter {
 
 
  We get the key code with getKeyCode() method.
+
+   // Java 12 switch expressions
+switch (keycode) {
