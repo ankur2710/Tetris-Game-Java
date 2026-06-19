@@ -422,3 +422,6 @@ switch (keycode) {
     case KeyEvent.VK_D -> oneLineDown();
 }
     
+
+
+With Java 12 switch expressions, we bind key events to methods. For instance, with the Space key we drop down the falling tetris piece.
