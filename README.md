@@ -428,4 +428,5 @@ With Java 12 switch expressions, we bind key events to methods. For instance, wi
 
 In the Tetris.java file, we set up the game. We create a board on which we play the game. We create a statusbar.
 
-statusbar = new JLabel(" 0");
+     statusbar = new JLabel(" 0");
+     add(statusbar, BorderLayout.SOUTH);
