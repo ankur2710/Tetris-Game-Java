@@ -425,3 +425,5 @@ switch (keycode) {
 
 
 With Java 12 switch expressions, we bind key events to methods. For instance, with the Space key we drop down the falling tetris piece.
+
+In the Tetris.java file, we set up the game. We create a board on which we play the game. We create a statusbar.
