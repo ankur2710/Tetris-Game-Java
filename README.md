@@ -433,3 +433,6 @@ In the Tetris.java file, we set up the game. We create a board on which we play 
 
 
 The score is displayed in a label which is located at the bottom of the board.
+
+
+var board = new Board(this);
