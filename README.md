@@ -441,3 +441,8 @@ board.start();
 
 
 The board is created and added to the container. The start() method starts the Tetris game.
+
+
+
+
+https://zetcode.com/img/gfx/javagames/tetris.png
