@@ -307,4 +307,20 @@ private void dropDown() {
 
             int keycode = e.getKeyCode();
 
+               // Java 12 switch expressions
+            switch (keycode) {
+
+                case KeyEvent.VK_P -> pause();
+                case KeyEvent.VK_LEFT -> tryMove(curPiece, curX - 1, curY);
+                case KeyEvent.VK_RIGHT -> tryMove(curPiece, curX + 1, curY);
+                case KeyEvent.VK_DOWN -> tryMove(curPiece.rotateRight(), curX, curY);
+                case KeyEvent.VK_UP -> tryMove(curPiece.rotateLeft(), curX, curY);
+                case KeyEvent.VK_SPACE -> dropDown();
+                case KeyEvent.VK_D -> oneLineDown();
+            }
+        }
+    }
+}
+
+
          
