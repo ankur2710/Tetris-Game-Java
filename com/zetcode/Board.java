@@ -28,3 +28,57 @@ public class Board extends JPanel {
     private Shape curPiece;
     private Tetrominoe[] board;
 
+      public Board(Tetris parent) {
+
+        initBoard(parent);
+    }
+
+    private void initBoard(Tetris parent) {
+
+        setFocusable(true);
+        statusbar = parent.getStatusBar();
+        addKeyListener(new TAdapter());
+    }
+
+    private int squareWidth() {
+
+        return (int) getSize().getWidth() / BOARD_WIDTH;
+    }
+
+    private int squareHeight() {
+
+        return (int) getSize().getHeight() / BOARD_HEIGHT;
+    }
+
+    private Tetrominoe shapeAt(int x, int y) {
+
+        return board[(y * BOARD_WIDTH) + x];
+    }
+
+    void start() {
+
+        curPiece = new Shape();
+        board = new Tetrominoe[BOARD_WIDTH * BOARD_HEIGHT];
+
+        clearBoard();
+        newPiece();
+
+        timer = new Timer(PERIOD_INTERVAL, new GameCycle());
+        timer.start();
+    }
+
+    private void pause() {
+
+        isPaused = !isPaused;
+
+        if (isPaused) {
+
+            statusbar.setText("paused");
+        } else {
+
+            statusbar.setText(String.valueOf(numLinesRemoved));
+        }
+
+        repaint();
+    }
+
