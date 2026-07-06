@@ -107,4 +107,20 @@ public class Board extends JPanel {
             }
         }
 
+        if (curPiece.getShape() != Tetrominoe.NoShape) {
+
+            for (int i = 0; i < 4; i++) {
+
+                int x = curX + curPiece.x(i);
+                int y = curY - curPiece.y(i);
+
+                drawSquare(g, x * squareWidth(),
+                        boardTop + (BOARD_HEIGHT - y - 1) * squareHeight(),
+                        curPiece.getShape());
+            }
+        }
+    }
+
+
+
 
