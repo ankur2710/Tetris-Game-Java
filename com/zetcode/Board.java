@@ -81,4 +81,11 @@ public class Board extends JPanel {
 
         repaint();
     }
+   @Override
+    public void paintComponent(Graphics g) {
+
+        super.paintComponent(g);
+        doDrawing(g);
+    }
+
 
