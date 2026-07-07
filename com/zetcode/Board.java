@@ -151,6 +151,16 @@ public class Board extends JPanel {
             board[i] = Tetrominoe.NoShape;
         }
     }
+    private void pieceDropped() {
+
+        for (int i = 0; i < 4; i++) {
+
+            int x = curX + curPiece.x(i);
+            int y = curY - curPiece.y(i);
+            board[(y * BOARD_WIDTH) + x] = curPiece.getShape();
+        }
+
+        removeFullLines();
 
 
 
