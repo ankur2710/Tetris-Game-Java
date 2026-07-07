@@ -161,6 +161,11 @@ public class Board extends JPanel {
         }
 
         removeFullLines();
+         if (!isFallingFinished) {
+
+            newPiece();
+        }
+    }
 
 
 
