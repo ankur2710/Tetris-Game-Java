@@ -137,6 +137,13 @@ public class Board extends JPanel {
 
         pieceDropped();
     }
+    private void oneLineDown() {
+
+        if (!tryMove(curPiece, curX, curY - 1)) {
+
+            pieceDropped();
+        }
+    }
 
 
 
