@@ -193,6 +193,13 @@ public class Board extends JPanel {
                 return false;
             }
 
+             if (shapeAt(x, y) != Tetrominoe.NoShape) {
+
+                return false;
+            }
+        }
+
+
 
 
 
