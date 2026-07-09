@@ -198,6 +198,14 @@ public class Board extends JPanel {
                 return false;
             }
         }
+           curPiece = newPiece;
+        curX = newX;
+        curY = newY;
+
+        repaint();
+
+        return true;
+    }
 
 
 
