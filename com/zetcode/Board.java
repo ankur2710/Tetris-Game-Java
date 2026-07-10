@@ -214,6 +214,15 @@ public class Board extends JPanel {
 
             boolean lineIsFull = true;
 
+        for (int j = 0; j < BOARD_WIDTH; j++) {
+
+            if (shapeAt(j, i) == Tetrominoe.NoShape) {
+
+                lineIsFull = false;
+                break;
+            }
+        }
+
 
 
 
