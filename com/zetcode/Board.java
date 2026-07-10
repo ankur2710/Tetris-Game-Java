@@ -232,6 +232,7 @@ public class Board extends JPanel {
                 }
             }
         }
+        //245
 
 
 
