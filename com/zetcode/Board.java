@@ -222,6 +222,9 @@ public class Board extends JPanel {
                 break;
             }
         }
+             if (lineIsFull) {
+
+                numFullLines++;
 
 
 
