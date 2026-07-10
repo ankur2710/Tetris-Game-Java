@@ -225,6 +225,13 @@ public class Board extends JPanel {
              if (lineIsFull) {
 
                 numFullLines++;
+                  for (int k = i; k < BOARD_HEIGHT - 1; k++) {
+                    for (int j = 0; j < BOARD_WIDTH; j++) {
+                        board[(k * BOARD_WIDTH) + j] = shapeAt(j, k + 1);
+                    }
+                }
+            }
+        }
 
 
 
