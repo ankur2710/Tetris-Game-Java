@@ -301,6 +301,7 @@ public class Board extends JPanel {
 
                 return;
             }
+             int keycode = e.getKeyCode();
 
 
 
