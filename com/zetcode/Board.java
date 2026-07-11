@@ -271,6 +271,12 @@ public class Board extends JPanel {
             doGameCycle();
         }
     }
+    private void doGameCycle() {
+
+        update();
+        repaint();
+    }
+
 
         
 
