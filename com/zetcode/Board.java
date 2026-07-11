@@ -287,6 +287,12 @@ public class Board extends JPanel {
             isFallingFinished = false;
             newPiece();
         } 
+        else {
+
+            oneLineDown();
+        }
+    }
+
 
 
         
