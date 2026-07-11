@@ -282,6 +282,11 @@ public class Board extends JPanel {
 
             return;
         }
+        if (isFallingFinished) {
+
+            isFallingFinished = false;
+            newPiece();
+        } 
 
 
         
