@@ -232,7 +232,17 @@ public class Board extends JPanel {
                 }
             }
         }
-        //245
+         if (numFullLines > 0) {
+
+            numLinesRemoved += numFullLines;
+
+            statusbar.setText(String.valueOf(numLinesRemoved));
+            isFallingFinished = true;
+            curPiece.setShape(Tetrominoe.NoShape);
+        }
+    }
+
+        
 
 
 
