@@ -292,6 +292,15 @@ public class Board extends JPanel {
             oneLineDown();
         }
     }
+   class TAdapter extends KeyAdapter {
+
+        @Override
+        public void keyPressed(KeyEvent e) {
+
+            if (curPiece.getShape() == Tetrominoe.NoShape) {
+
+                return;
+            }
 
 
 
