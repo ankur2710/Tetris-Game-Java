@@ -303,6 +303,10 @@ public class Board extends JPanel {
             }
              int keycode = e.getKeyCode();
              // Java 12 switch expressions
+               case KeyEvent.VK_P -> pause();
+                case KeyEvent.VK_LEFT -> tryMove(curPiece, curX - 1, curY);
+                case KeyEvent.VK_RIGHT -> tryMove(curPiece, curX + 1, curY);
+                case KeyEvent.VK_DOWN -> tryMove(curPiece.rotateRight(), curX, curY);
 
 
 
