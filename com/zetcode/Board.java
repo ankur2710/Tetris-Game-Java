@@ -276,6 +276,12 @@ public class Board extends JPanel {
         update();
         repaint();
     }
+    private void update() {
+
+        if (isPaused) {
+
+            return;
+        }
 
 
         
