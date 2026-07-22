@@ -39,4 +39,69 @@ int[][][] coordsTable = new int[][][]{
     {{1, -1}, {0, -1}, {0, 0}, {0, 1}}
 };
 
+The coordsTable array holds all possible coordinate values of the Tetris pieces. This is a template from which all pieces take their coordiate values.
+
+for (int i = 0; i < 4; i++) {
+
+    System.arraycopy(coordsTable[shape.ordinal()], 0, coords, 0, 4);
+}
+
+We put one row of the coordinate values from the coordsTable into the coords array of a Tetris piece. Note the usage of the ordinal() method. In C++, an enum type is essentially an integer. Unlike in C++, Java enums are full classes and the ordinal() method returns the current position of the enum type in the enum object.
+
+The following image will help understand the coordinate values a bit more. The coords array saves the coordinates of the Tetris piece. For example, numbers (-1, 1), (-1, 0), (0, 0), and (0, -1) represent a rotated S-shape. The following diagram illustrates the shape.
+
+<img width="272" height="230" alt="image" src="https://github.com/user-attachments/assets/8912eef7-b377-49e6-92bd-3f1b94e6ff88" />
+
+Figure: Coordinates
+
+Shape rotateLeft() {
+
+    if (pieceShape == Tetrominoe.SquareShape) {
+
+        return this;
+    }
+
+    var result = new Shape();
+    result.pieceShape = pieceShape;
+
+    for (int i = 0; i < 4; i++) {
+
+        result.setX(i, y(i));
+        result.setY(i, -x(i));
+    }
+
+    return result;
+}
+
+This code rotates a piece to the left. The square does not have to be rotated. That's why we simply return the reference to the current object. Looking at the previous image will help to understand the rotation.
+
+
+Finally, we have the Board.java file. This is where the game logic is located.
+
+private final int BOARD_WIDTH = 10;
+
+private final int BOARD_HEIGHT = 22;
+
+private final int PERIOD_INTERVAL = 300;
+
+We have four constants. The BOARD_WIDTH and BOARD_HEIGHT define the size of the board. The PERIOD_INTERVAL constant defines the speed of the game.
+
+
+...
+private boolean isFallingFinished = false;
+private boolean isStarted = false;
+private boolean isPaused = false;
+private int numLinesRemoved = 0;
+private int curX = 0;
+private int curY = 0;
+...
+
+Some important variables are initialized. The isFallingFinished determines if the Tetris shape has finished falling and we then need to create a new shape. The isStarted is used to check if the game has started. Likewise, the isPaused is used to check if the game is paused. The numLinesRemoved counts the number of lines that we have removed so far. The curX and curY determine the actual position of the falling Tetris shape.
+
+private int squareWidth() {
+
+    return (int) getSize().getWidth() / BOARD_WIDTH;
+}
+
+
 
