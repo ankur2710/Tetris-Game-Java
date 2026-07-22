@@ -392,3 +392,49 @@ private void update() {
     }
 }
 
+
+The update() represents one step of the game. The falling piece goes one line down or a new piece is created if the previous one has finished falling.
+
+private class TAdapter extends KeyAdapter {
+
+    @Override
+     public void keyPressed(KeyEvent e) {
+        ...
+
+ The game is controlled with cursor keys. We check for key events in the KeyAdapter.      
+
+
+    int keycode = e.getKeyCode();
+
+
+ We get the key code with getKeyCode() method.
+
+   // Java 12 switch expressions
+switch (keycode) {
+    case KeyEvent.VK_P -> pause();
+    case KeyEvent.VK_LEFT -> tryMove(curPiece, curX - 1, curY);
+    case KeyEvent.VK_RIGHT -> tryMove(curPiece, curX + 1, curY);
+    case KeyEvent.VK_DOWN -> tryMove(curPiece.rotateRight(), curX, curY);
+    case KeyEvent.VK_UP -> tryMove(curPiece.rotateLeft(), curX, curY);
+    case KeyEvent.VK_SPACE -> dropDown();
+    case KeyEvent.VK_D -> oneLineDown();
+}
+    
+
+
+With Java 12 switch expressions, we bind key events to methods. For instance, with the Space key we drop down the falling tetris piece.
+
+In the Tetris.java file, we set up the game. We create a board on which we play the game. We create a statusbar.
+
+     statusbar = new JLabel(" 0");
+     add(statusbar, BorderLayout.SOUTH);
+
+
+The score is displayed in a label which is located at the bottom of the board.
+
+
+var board = new Board(this);
+add(board);
+board.start();
+
+
