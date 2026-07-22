@@ -440,4 +440,15 @@ The board is created and added to the container. The start() method starts the T
 
 
 
+<img width="200" height="400" alt="image" src="https://github.com/user-attachments/assets/d27baef7-30ca-4987-8aa9-018a2bb98962" />
+
+
+
+Figure: Tetris
+This was the Tetris game.
+
+
+
+
+
 
